@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main" id="main">
+        <div class="main-dashboard" id="sidebar">
+            <div class="logo">
+                <h3>Dashboard</h3>
+            </div>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>Home</li>
+                <li><i class="fa-brands fa-product-hunt"></i>Products</li>
+                <li><i class="fa-solid fa-user"></i>Customers</li>
+                <li><i class="fa-solid fa-chart-simple"></i>Stats</li>
+                <li><i class="fa-regular fa-user"></i>New Clients</li>
+                <li><i class="fa-solid fa-money-bill"></i>Refunds</li>
+            </ul>
+        </div>
+        <div class="main-content" id="main-content">
+            <div class="header" id="header">
+                <div class="name">
+                    <h2>Welcome back, Dhanush</h2>
+                </div>
+                <div class="profile">
+                    <img src="./images/profile.jpg" alt="">
+                    <p>Dhanush</p>
+                    <p>Logout</p>
+                    <p><i id="light-mode" class="fa-solid fa-sun" style="color: yellow;" title="Switch To Light Mode"></i></p>
+                    <p style="display: none;"><i id="dark-mode" class="fa-solid fa-moon" style="color: darkgray" title="Switch To Night Mode"></i></p>
+                </div>
+            </div>
+            <div class="stock-cards">
+                <div class="stock-card box" id="stock-card">
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> Total Sales
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 20,50000</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-up" style="color:green"></i> 20% More Than Last Month
+                    </p>
+
+                </div>
+                <div class="stock-card box" id="stock-card">
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> Total Sales
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 30,50700</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-up" style="color:green"></i> 20% More Than Last Month
+                    </p>
+
+                </div>
+                <div class="stock-card box" id="stock-card">
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> Total Sales
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 10,00500</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-up" style="color:green"></i> 20% More Than Last Month
+                    </p>
+
+                </div>
+                <div class="stock-card box" id="stock-card">
+                    <p>
+                        <i class="fa-solid fa-dollar-sign"></i> New Customers Joined
+                    </p>
+
+                    <h1><i class="fa-solid fa-indian-rupee-sign"></i> 3,010</h1>
+
+                    <p>
+                        <i class="fa-solid fa-arrow-trend-down" style="color:red"></i> 50% Less Than Last Month
+                    </p>
+
+                </div>
+            </div>
+            <div class="graphs">
+                    <div class="line-chart box">
+
+                        <canvas id="linechart"></canvas>
+    
+                    </div>
+    
+                    <div class="polar-area box">
+                        <canvas id="polararea"></canvas>
+                    </div>
+    
+                    <div class="doughnut-chart box">
+                        <canvas id="doughnutchart"></canvas>
+                    </div>
+            </div>
+            <div class="products box">
+
+                <h1>Top Products This Month</h1>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Vendor</th>
+                            <th>Sales</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Samsung Galaxy M51</td>
+                            <td>23000</td>
+                            <td>145</td>
+                            <td>Samsung</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Apple Iphone 14</td>
+                            <td>23000</td>
+                            <td>145</td>
+                            <td>Apple</td>
+                            <td>10%</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>LG HD OLED</td>
+                            <td>23000</td>
+                            <td>145</td>
+                            <td>LG</td>
+                            <td>10%</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
